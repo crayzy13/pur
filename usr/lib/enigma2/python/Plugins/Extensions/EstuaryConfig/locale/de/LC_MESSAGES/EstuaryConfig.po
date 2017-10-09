@@ -1,0 +1,506 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-28 10:52+0200\n"
+"PO-Revision-Date: 2017-05-28 11:07+0200\n"
+"Last-Translator: Terrajoe <terrajoe@pb-powerboard.com>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+
+#: EstuaryConfig.py:45 EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48 EstuaryConfig.py:51 EstuaryConfig.py:52
+msgid "default"
+msgstr "Standard"
+
+#: EstuaryConfig.py:45
+msgid "-5%"
+msgstr "-5%"
+
+#: EstuaryConfig.py:45
+msgid "-10%"
+msgstr "-10%"
+
+#: EstuaryConfig.py:45
+msgid "+5%"
+msgstr "+5%"
+
+#: EstuaryConfig.py:45
+msgid "+10%"
+msgstr "+10%"
+
+#: EstuaryConfig.py:45
+msgid "+15%"
+msgstr "+15%"
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48 EstuaryConfig.py:51 EstuaryConfig.py:60
+msgid "blue"
+msgstr "blau"
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48 EstuaryConfig.py:51 EstuaryConfig.py:60
+msgid "green"
+msgstr "grün"
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48 EstuaryConfig.py:51 EstuaryConfig.py:60
+msgid "orange"
+msgstr "orange"
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48 EstuaryConfig.py:51 EstuaryConfig.py:60
+msgid "red"
+msgstr "rot"
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48 EstuaryConfig.py:51
+msgid "white"
+msgstr "weiß"
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48 EstuaryConfig.py:51 EstuaryConfig.py:60
+msgid "yellow"
+msgstr "gelb"
+
+#: EstuaryConfig.py:51
+msgid "black"
+msgstr "schwarz"
+
+#: EstuaryConfig.py:51
+msgid "transparent"
+msgstr "transparent"
+
+#: EstuaryConfig.py:52
+msgid "10"
+msgstr "10"
+
+#: EstuaryConfig.py:52
+msgid "20"
+msgstr "20"
+
+#: EstuaryConfig.py:52
+msgid "30"
+msgstr "30"
+
+#: EstuaryConfig.py:52
+msgid "40"
+msgstr "40"
+
+#: EstuaryConfig.py:52
+msgid "50"
+msgstr "50"
+
+#: EstuaryConfig.py:52
+msgid "60"
+msgstr "60"
+
+#: EstuaryConfig.py:52
+msgid "70"
+msgstr "70"
+
+#: EstuaryConfig.py:52
+msgid "80"
+msgstr "80"
+
+#: EstuaryConfig.py:52
+msgid "90"
+msgstr "90"
+
+#: EstuaryConfig.py:56
+msgid "top"
+msgstr "oben"
+
+#: EstuaryConfig.py:56
+msgid "bottom"
+msgstr "unten"
+
+#: EstuaryConfig.py:59
+msgid "number"
+msgstr "Nummer"
+
+#: EstuaryConfig.py:59
+msgid "horizontal"
+msgstr "horizontal"
+
+#: EstuaryConfig.py:59
+msgid "vertical"
+msgstr "vertical"
+
+#: EstuaryConfig.py:61 EstuaryConfig.py:65 EstuaryConfig.py:74
+msgid "None"
+msgstr "Nichts"
+
+#: EstuaryConfig.py:61 EstuaryConfig.py:62
+msgid "Weather"
+msgstr "Wetter"
+
+#: EstuaryConfig.py:61
+msgid "ECM Info + PIDs"
+msgstr "ECM Info + PIDs"
+
+#: EstuaryConfig.py:62
+msgid "System info"
+msgstr "System Info"
+
+#: EstuaryConfig.py:65
+msgid "EPG Description"
+msgstr "EPG Beschreibung"
+
+#: EstuaryConfig.py:65
+msgid "Next Events"
+msgstr "Nächstes Ereignis"
+
+#: EstuaryConfig.py:73
+msgid "IconWall"
+msgstr "Bilderwand"
+
+#: EstuaryConfig.py:73
+msgid "Shift"
+msgstr "Shift"
+
+#: EstuaryConfig.py:73
+#, fuzzy
+msgid "ShiftHorizon"
+msgstr "horizontal"
+
+#: EstuaryConfig.py:73
+msgid "Verby"
+msgstr "Verby"
+
+#: EstuaryConfig.py:73
+msgid "Standard"
+msgstr "Standard"
+
+#: EstuaryConfig.py:74
+msgid "Type1"
+msgstr "Typ 1"
+
+#: EstuaryConfig.py:74
+msgid "Type2"
+msgstr "Typ 2"
+
+#: EstuaryConfig.py:74
+msgid "Type3"
+msgstr "Typ 3"
+
+#: EstuaryConfig.py:74
+msgid "Type4"
+msgstr "Typ 4"
+
+#: EstuaryConfig.py:82
+msgid " "
+msgstr " "
+
+#: EstuaryConfig.py:129
+msgid "Global:"
+msgstr "Grundsätzlich:"
+
+#: EstuaryConfig.py:130
+msgid "  - Font color"
+msgstr "  - Schriftfarbe"
+
+#: EstuaryConfig.py:130
+msgid "Change font color."
+msgstr "Ändung der Farbe der Schrift"
+
+#: EstuaryConfig.py:131
+msgid "  - Font color Special"
+msgstr "  - Farbe der Schriftart Spezial"
+
+#: EstuaryConfig.py:131
+msgid "You can change special font color (highlighted stuff in skin). Like event time in infobar, progress bar color, etc..."
+msgstr ""
+"Du kannst die spezial Schriftfarbe ändern (Hervorheben von Sachen im Skin). Wie die Ereigniszeit in der Infobar, Farbe des Fortschrittsbalken und "
+"so weiter..."
+
+#: EstuaryConfig.py:132
+msgid "  - Make font bigger/smaller for"
+msgstr "  - Mach die Schrift größer / schmaler für"
+
+#: EstuaryConfig.py:132
+msgid ""
+"This allows you to change the font size relative to skin size. Keep in mind overlap is possible, try to use smaller value If you notice the "
+"overlap."
+msgstr ""
+"Dies erlaubt dir die Schriftgröße relativ zum Skin zu ändern. Beachte, das ein überlappen möglich ist. Wenn du das feststellst, dann benutze bitte "
+"einen kleineren Wert."
+
+#: EstuaryConfig.py:133
+msgid "  - Selection color"
+msgstr "  - Farbauswahl"
+
+#: EstuaryConfig.py:133
+msgid "Change selection color. This will change background color in all lists, for selected item."
+msgstr "Ändere die Farbauswahl. Dies ändert die Hintergrundfarbe in allen Listen, für markierte Artikel."
+
+#: EstuaryConfig.py:136 EstuaryConfig.py:142 EstuaryConfig.py:166 EstuaryConfig.py:174 EstuaryConfig.py:190
+msgid "--------------------------------------------------------------------------------------------------------------------------------------------"
+msgstr "--------------------------------------------------------------------------------------------------------------------------------------------"
+
+#: EstuaryConfig.py:137
+msgid "Background:"
+msgstr "Hintergrund:"
+
+#: EstuaryConfig.py:138
+msgid "  - Overlay color"
+msgstr "  - Farbüberschreibung"
+
+#: EstuaryConfig.py:138
+#, fuzzy
+msgid "Change overlay color."
+msgstr "Ändung der Farbe der Schrift"
+
+#: EstuaryConfig.py:139
+msgid "  - Overlay color transparency"
+msgstr "  - Farbüberschreibungstransparenz"
+
+#: EstuaryConfig.py:139
+#, fuzzy
+msgid ""
+"Change overlay color transparency. Default transparency value is 30.\n"
+" So 10 increases by 10%, 20 increases by 20%, etc..."
+msgstr ""
+"Ändere Farbüberschreibungstransparenz. Standard Transparenzwert ist 50.\n"
+"10 erhöht sich um 10%, 20 erhöht sich um 20%, etc..."
+
+#: EstuaryConfig.py:143
+msgid "Infobar/SecondInfobar:"
+msgstr "Infobar/SecondInfobar:"
+
+#: EstuaryConfig.py:147
+msgid "Simple and clean user interface without extra informations or widgets."
+msgstr "Einfaches und sauberes Userinterface ohne extra Informationen oder Komponenten. "
+
+#: EstuaryConfig.py:148
+msgid "With alternative infobar you will not be able to see additional widgets/changes/etc... if you have already set them up for default infobar."
+msgstr ""
+"Mit der alternativen Infobar wirst du keine zusätzlichen Komponenten angezeigt bekommen.  Wenn du sie bereits für die Standard-Infobar "
+"eingerichtet hast."
+
+#: EstuaryConfig.py:149
+msgid "  - Use Alternative Infobar"
+msgstr "  - Benutze die alternative Infobar"
+
+#: EstuaryConfig.py:151
+msgid "  - Picon position"
+msgstr "  - Picon Position"
+
+#: EstuaryConfig.py:151
+msgid ""
+"Change picon position. Choose from top to bottom.\n"
+" So you will see picon on infobar/second infobar according your choice."
+msgstr ""
+"Ändere die Picon Position. due kannst wählen von oben nach unten. \n"
+"Du wirst die Picons in der Infobar /2. Infobar so sehen, wie due es ausgewählt hast."
+
+#: EstuaryConfig.py:152
+msgid "  - Show AGC instead BER"
+msgstr "  - Zeige AGC statt BER"
+
+#: EstuaryConfig.py:152
+msgid "Show AGC instead BER on Infobar. This change will be visible only on Infobar, Second Infobar will not be affected."
+msgstr "Zeige AGC statt BER in der Infobar. Diese Änderungen sind nur in der Infobar sichtbar, Auf die 2 Infobar hat dies keinen Effekt."
+
+#: EstuaryConfig.py:153
+msgid "  - Volume Style"
+msgstr "  - Lautstärken Stil"
+
+#: EstuaryConfig.py:153
+msgid "Volume style: with number, hotizontal or vertical style?"
+msgstr "Lautstärken Stil: numerischer, hoizontaler oder vertikaler Stil?"
+
+#: EstuaryConfig.py:155
+msgid "  - Infobar widget"
+msgstr "  - Infobar Widget"
+
+#: EstuaryConfig.py:155
+msgid "Which widget you want to show on Infobar? Default is None. Keep in mind some widgets on infobar screen can make slower ZAP."
+msgstr "Welches Widget möchtest du in der Infobar sehen? Standard ist keins. Bedenke, dass manches Widget das Zappen verlangsamen kann."
+
+#: EstuaryConfig.py:156
+msgid "  - Second Infobar widget"
+msgstr "  - 2. Infobar Widget"
+
+#: EstuaryConfig.py:156
+msgid "Which widget you want to show on second Infobar?"
+msgstr "Welches Widget möchtest du in der 2. Infobar sehen?"
+
+#: EstuaryConfig.py:158
+msgid "  - Weather icons color"
+msgstr "  - Farbe der Wettersymbole"
+
+#: EstuaryConfig.py:158
+msgid "Weather icons color. Weather icons color on infobar/secondinfobar."
+msgstr "Farbe der Wettersymbole. Farbe der Wettersymbole in der Infobar / 2. Infobar."
+
+#: EstuaryConfig.py:159
+msgid "  - Show channel number"
+msgstr "  - Zeige Kanalnummern"
+
+#: EstuaryConfig.py:159
+msgid "Show channel number under channel name in Infobar/secondinfobar."
+msgstr "Zeige Kanalnummern unter Kanalname in der Infobar / 2. Infobar."
+
+#: EstuaryConfig.py:161
+msgid "  - Infobar timeout in seconds"
+msgstr "  - Infobar Timeout in Sekunden"
+
+#: EstuaryConfig.py:161
+msgid "Set the time delay before hiding the infobar."
+msgstr "Setze die zeitliche Verzögerung bevor die Infobar ausgeblendet wird."
+
+#: EstuaryConfig.py:162
+msgid "  - Show second infobar"
+msgstr "  - Zeige 2. Infobar"
+
+#: EstuaryConfig.py:162
+msgid ""
+"Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information "
+"about the current channel."
+msgstr ""
+"Konfiguriere das Wetter (und für wie lang) in der 2. Infobar die Anzeige erfolgt, wenn OK gedrückt wird. Die 2. Infobar enthält erweiterte "
+"Informationen über den derzeitig gewählten Kanal."
+
+#: EstuaryConfig.py:163
+msgid "  - Show infobar on event change"
+msgstr "  - Zeige die Infobar bei der Änderungen eines Ereignisses"
+
+#: EstuaryConfig.py:163
+msgid "When enabled, the infobar will be displayed when a new event starts."
+msgstr "Wenn es eingeschaltet ist, wird die Infobar angezeigt sobald ein neues Ereignis beginnt"
+
+#: EstuaryConfig.py:167
+msgid "Channel List:"
+msgstr "Kanalliste"
+
+#: EstuaryConfig.py:168
+msgid "  - Channel list widget"
+msgstr "  - Kanallist Widget"
+
+#: EstuaryConfig.py:168
+msgid "Which widget you want to show on Channel list? EPG Description for selected channel is default, Next Events list or Nothing?"
+msgstr ""
+"Welches Widget möchtest du in der Kanalliste angezeigt bekommen? EPG Beschreibung ist für den gewählen Kanal Standard, nächsten Ereignisse oder "
+"nichts?"
+
+#: EstuaryConfig.py:169
+msgid "  - Turn off the running text"
+msgstr "  - Schaltet den Fließtext ab"
+
+#: EstuaryConfig.py:169
+msgid "You can turn off the running text for EPG description in channel list."
+msgstr ""
+"Du kannst den Fließtext für die EPG Beschreibung in der Kanalliste abschalte. Wenn du Verzögerungen in der Kanalliste feststellst, kanns du es "
+"ausstelllen."
+
+#: EstuaryConfig.py:170
+msgid "  - Show Picon in Channel list"
+msgstr "Zeige Picons in der Kanalliste"
+
+#: EstuaryConfig.py:170
+msgid "Show Picon for selected channel. If you notice lag in channel list try to turn off this setting."
+msgstr "Zeige Picons für den ausgewählten Kanal. Wenn du Verzögerungen feststellst, kannst du es ausstellen."
+
+#: EstuaryConfig.py:175
+msgid "Menu:"
+msgstr "Menü:"
+
+#: EstuaryConfig.py:176
+msgid "  - Menu Style"
+msgstr "  - Menü Stil"
+
+#: EstuaryConfig.py:176
+msgid "Here you can change menu style."
+msgstr "Hier kannst du das Aussehen des Menü´s ändern."
+
+#: EstuaryConfig.py:177
+msgid "  - Choose Background Wallpaper"
+msgstr "  - Wähle einen alternativen Hintergrund "
+
+#: EstuaryConfig.py:177
+msgid "Here you can set Menu background picture."
+msgstr "Hier kannst du das Aussehen des Menü´s Hintergrundes ändern."
+
+#: EstuaryConfig.py:191
+msgid "Weather:"
+msgstr "Wetter:"
+
+#: EstuaryConfig.py:192
+msgid "Press OK to open Weather plugin and set/change your city and all other values."
+msgstr "Drücke OK umd die Wetter-Erweiterung zu öffnen und stelle oder ändere deine Stadt und andere Werte."
+
+#: EstuaryConfig.py:220
+msgid "Save"
+msgstr "Speichern"
+
+#: EstuaryConfig.py:221
+msgid "Cancel"
+msgstr "Abbruch"
+
+#: EstuaryConfig.py:222
+msgid "About"
+msgstr "Über"
+
+#: EstuaryConfig.py:769
+msgid "Error"
+msgstr "Fehler"
+
+#: EstuaryConfig.py:771
+msgid "You need to restart your box to apply changes"
+msgstr "Du musst deine Box restarten und die Änderungen anzuwenden."
+
+#: EstuaryConfig.py:772
+msgid "Estuary Settings: "
+msgstr "Estuary Einstellungen:"
+
+#: EstuaryConfig.py:772
+msgid "Restart GUI now?"
+msgstr "Neustart der GUI jetzt?"
+
+#: EstuaryConfig.py:856
+msgid ""
+"I can not find WeatherPlugin on your system. \n"
+" Download and install Weather plugin and try again."
+msgstr ""
+"Ich kann die Wetter-Erweiterung nicht finden auf deinem System. \n"
+"Downloade und installiere die Erweiterung und versuche es erneut."
+
+#: EstuaryConfig.py:1009
+msgid ""
+"2017 - Franc \n"
+"Version: "
+msgstr ""
+"2017 - Franc \n"
+"Version: "
+
+#: EstuaryConfig.py:1019
+#, fuzzy
+msgid ""
+"There is no Estuary skin on your system or Estuary is not default skin. \n"
+" Please make sure you have Estuary installed and set as default skin, then try again."
+msgstr ""
+"Auf deinem System ist kein Estuary Skin installiert. \n"
+"Lade und installiere Estuary und dann probiere es erneut."
+
+#~ msgid "Change overlay color. Default transparency value is 50."
+#~ msgstr "Ändere die Farbe für die Farbüberschreibung. Standard Transparenzwert ist 50."
+
+#~ msgid "Show Picon for selected channel."
+#~ msgstr "Zeige Picons für den ausgewählten Kanal."
+
+#~ msgid "Other:"
+#~ msgstr "Anderes:"
+
+#~ msgid "  - Use Estuary spinner"
+#~ msgstr "  - Benutze den Estuary Spinner"
+
+#~ msgid "Override enigma2 default spinner with Estuary skin spinner."
+#~ msgstr "Überschreibe den Standard Spinner mit dem vom Estuary Skin."
+
+#~ msgid "  - Call weather plugin"
+#~ msgstr " - Die Wettererweiterung aufrufen "
+
+#~ msgid ""
+#~ "2016 - Franc \n"
+#~ " www.pb-powerboard.com"
+#~ msgstr ""
+#~ "2016 - Franc \n"
+#~ " www.pb-powerboard.com"

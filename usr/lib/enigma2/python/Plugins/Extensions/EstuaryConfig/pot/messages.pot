@@ -1,0 +1,486 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-28 10:52+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: EstuaryConfig.py:45 EstuaryConfig.py:46 EstuaryConfig.py:47
+#: EstuaryConfig.py:48 EstuaryConfig.py:51 EstuaryConfig.py:52
+msgid "default"
+msgstr ""
+
+#: EstuaryConfig.py:45
+msgid "-5%"
+msgstr ""
+
+#: EstuaryConfig.py:45
+msgid "-10%"
+msgstr ""
+
+#: EstuaryConfig.py:45
+msgid "+5%"
+msgstr ""
+
+#: EstuaryConfig.py:45
+msgid "+10%"
+msgstr ""
+
+#: EstuaryConfig.py:45
+msgid "+15%"
+msgstr ""
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48
+#: EstuaryConfig.py:51 EstuaryConfig.py:60
+msgid "blue"
+msgstr ""
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48
+#: EstuaryConfig.py:51 EstuaryConfig.py:60
+msgid "green"
+msgstr ""
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48
+#: EstuaryConfig.py:51 EstuaryConfig.py:60
+msgid "orange"
+msgstr ""
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48
+#: EstuaryConfig.py:51 EstuaryConfig.py:60
+msgid "red"
+msgstr ""
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48
+#: EstuaryConfig.py:51
+msgid "white"
+msgstr ""
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48
+#: EstuaryConfig.py:51 EstuaryConfig.py:60
+msgid "yellow"
+msgstr ""
+
+#: EstuaryConfig.py:51
+msgid "black"
+msgstr ""
+
+#: EstuaryConfig.py:51
+msgid "transparent"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "10"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "20"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "30"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "40"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "50"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "60"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "70"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "80"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "90"
+msgstr ""
+
+#: EstuaryConfig.py:56
+msgid "top"
+msgstr ""
+
+#: EstuaryConfig.py:56
+msgid "bottom"
+msgstr ""
+
+#: EstuaryConfig.py:59
+msgid "number"
+msgstr ""
+
+#: EstuaryConfig.py:59
+msgid "horizontal"
+msgstr ""
+
+#: EstuaryConfig.py:59
+msgid "vertical"
+msgstr ""
+
+#: EstuaryConfig.py:61 EstuaryConfig.py:65 EstuaryConfig.py:74
+msgid "None"
+msgstr ""
+
+#: EstuaryConfig.py:61 EstuaryConfig.py:62
+msgid "Weather"
+msgstr ""
+
+#: EstuaryConfig.py:61
+msgid "ECM Info + PIDs"
+msgstr ""
+
+#: EstuaryConfig.py:62
+msgid "System info"
+msgstr ""
+
+#: EstuaryConfig.py:65
+msgid "EPG Description"
+msgstr ""
+
+#: EstuaryConfig.py:65
+msgid "Next Events"
+msgstr ""
+
+#: EstuaryConfig.py:73
+msgid "IconWall"
+msgstr ""
+
+#: EstuaryConfig.py:73
+msgid "Shift"
+msgstr ""
+
+#: EstuaryConfig.py:73
+msgid "ShiftHorizon"
+msgstr ""
+
+#: EstuaryConfig.py:73
+msgid "Verby"
+msgstr ""
+
+#: EstuaryConfig.py:73
+msgid "Standard"
+msgstr ""
+
+#: EstuaryConfig.py:74
+msgid "Type1"
+msgstr ""
+
+#: EstuaryConfig.py:74
+msgid "Type2"
+msgstr ""
+
+#: EstuaryConfig.py:74
+msgid "Type3"
+msgstr ""
+
+#: EstuaryConfig.py:74
+msgid "Type4"
+msgstr ""
+
+#: EstuaryConfig.py:82
+msgid " "
+msgstr ""
+
+#: EstuaryConfig.py:129
+msgid "Global:"
+msgstr ""
+
+#: EstuaryConfig.py:130
+msgid "  - Font color"
+msgstr ""
+
+#: EstuaryConfig.py:130
+msgid "Change font color."
+msgstr ""
+
+#: EstuaryConfig.py:131
+msgid "  - Font color Special"
+msgstr ""
+
+#: EstuaryConfig.py:131
+msgid ""
+"You can change special font color (highlighted stuff in skin). Like event "
+"time in infobar, progress bar color, etc..."
+msgstr ""
+
+#: EstuaryConfig.py:132
+msgid "  - Make font bigger/smaller for"
+msgstr ""
+
+#: EstuaryConfig.py:132
+msgid ""
+"This allows you to change the font size relative to skin size. Keep in mind "
+"overlap is possible, try to use smaller value If you notice the overlap."
+msgstr ""
+
+#: EstuaryConfig.py:133
+msgid "  - Selection color"
+msgstr ""
+
+#: EstuaryConfig.py:133
+msgid ""
+"Change selection color. This will change background color in all lists, for "
+"selected item."
+msgstr ""
+
+#: EstuaryConfig.py:136 EstuaryConfig.py:142 EstuaryConfig.py:166
+#: EstuaryConfig.py:174 EstuaryConfig.py:190
+msgid "--------------------------------------------------------------------------------------------------------------------------------------------"
+msgstr ""
+
+#: EstuaryConfig.py:137
+msgid "Background:"
+msgstr ""
+
+#: EstuaryConfig.py:138
+msgid "  - Overlay color"
+msgstr ""
+
+#: EstuaryConfig.py:138
+msgid "Change overlay color."
+msgstr ""
+
+#: EstuaryConfig.py:139
+msgid "  - Overlay color transparency"
+msgstr ""
+
+#: EstuaryConfig.py:139
+msgid ""
+"Change overlay color transparency. Default transparency value is 30.\n"
+" So 10 increases by 10%, 20 increases by 20%, etc..."
+msgstr ""
+
+#: EstuaryConfig.py:143
+msgid "Infobar/SecondInfobar:"
+msgstr ""
+
+#: EstuaryConfig.py:147
+msgid "Simple and clean user interface without extra informations or widgets."
+msgstr ""
+
+#: EstuaryConfig.py:148
+msgid ""
+"With alternative infobar you will not be able to see additional widgets/"
+"changes/etc... if you have already set them up for default infobar."
+msgstr ""
+
+#: EstuaryConfig.py:149
+msgid "  - Use Alternative Infobar"
+msgstr ""
+
+#: EstuaryConfig.py:151
+msgid "  - Picon position"
+msgstr ""
+
+#: EstuaryConfig.py:151
+msgid ""
+"Change picon position. Choose from top to bottom.\n"
+" So you will see picon on infobar/second infobar according your choice."
+msgstr ""
+
+#: EstuaryConfig.py:152
+msgid "  - Show AGC instead BER"
+msgstr ""
+
+#: EstuaryConfig.py:152
+msgid ""
+"Show AGC instead BER on Infobar. This change will be visible only on "
+"Infobar, Second Infobar will not be affected."
+msgstr ""
+
+#: EstuaryConfig.py:153
+msgid "  - Volume Style"
+msgstr ""
+
+#: EstuaryConfig.py:153
+msgid "Volume style: with number, hotizontal or vertical style?"
+msgstr ""
+
+#: EstuaryConfig.py:155
+msgid "  - Infobar widget"
+msgstr ""
+
+#: EstuaryConfig.py:155
+msgid ""
+"Which widget you want to show on Infobar? Default is None. Keep in mind some "
+"widgets on infobar screen can make slower ZAP."
+msgstr ""
+
+#: EstuaryConfig.py:156
+msgid "  - Second Infobar widget"
+msgstr ""
+
+#: EstuaryConfig.py:156
+msgid "Which widget you want to show on second Infobar?"
+msgstr ""
+
+#: EstuaryConfig.py:158
+msgid "  - Weather icons color"
+msgstr ""
+
+#: EstuaryConfig.py:158
+msgid "Weather icons color. Weather icons color on infobar/secondinfobar."
+msgstr ""
+
+#: EstuaryConfig.py:159
+msgid "  - Show channel number"
+msgstr ""
+
+#: EstuaryConfig.py:159
+msgid "Show channel number under channel name in Infobar/secondinfobar."
+msgstr ""
+
+#: EstuaryConfig.py:161
+msgid "  - Infobar timeout in seconds"
+msgstr ""
+
+#: EstuaryConfig.py:161
+msgid "Set the time delay before hiding the infobar."
+msgstr ""
+
+#: EstuaryConfig.py:162
+msgid "  - Show second infobar"
+msgstr ""
+
+#: EstuaryConfig.py:162
+msgid ""
+"Configure whether (and for how long) a second infobar will be shown when OK "
+"is pressed twice. The second infobar contains additional information about "
+"the current channel."
+msgstr ""
+
+#: EstuaryConfig.py:163
+msgid "  - Show infobar on event change"
+msgstr ""
+
+#: EstuaryConfig.py:163
+msgid "When enabled, the infobar will be displayed when a new event starts."
+msgstr ""
+
+#: EstuaryConfig.py:167
+msgid "Channel List:"
+msgstr ""
+
+#: EstuaryConfig.py:168
+msgid "  - Channel list widget"
+msgstr ""
+
+#: EstuaryConfig.py:168
+msgid ""
+"Which widget you want to show on Channel list? EPG Description for selected "
+"channel is default, Next Events list or Nothing?"
+msgstr ""
+
+#: EstuaryConfig.py:169
+msgid "  - Turn off the running text"
+msgstr ""
+
+#: EstuaryConfig.py:169
+msgid "You can turn off the running text for EPG description in channel list."
+msgstr ""
+
+#: EstuaryConfig.py:170
+msgid "  - Show Picon in Channel list"
+msgstr ""
+
+#: EstuaryConfig.py:170
+msgid ""
+"Show Picon for selected channel. If you notice lag in channel list try to "
+"turn off this setting."
+msgstr ""
+
+#: EstuaryConfig.py:175
+msgid "Menu:"
+msgstr ""
+
+#: EstuaryConfig.py:176
+msgid "  - Menu Style"
+msgstr ""
+
+#: EstuaryConfig.py:176
+msgid "Here you can change menu style."
+msgstr ""
+
+#: EstuaryConfig.py:177
+msgid "  - Choose Background Wallpaper"
+msgstr ""
+
+#: EstuaryConfig.py:177
+msgid "Here you can set Menu background picture."
+msgstr ""
+
+#: EstuaryConfig.py:191
+msgid "Weather:"
+msgstr ""
+
+#: EstuaryConfig.py:192
+msgid ""
+"Press OK to open Weather plugin and set/change your city and all other "
+"values."
+msgstr ""
+
+#: EstuaryConfig.py:220
+msgid "Save"
+msgstr ""
+
+#: EstuaryConfig.py:221
+msgid "Cancel"
+msgstr ""
+
+#: EstuaryConfig.py:222
+msgid "About"
+msgstr ""
+
+#: EstuaryConfig.py:769
+msgid "Error"
+msgstr ""
+
+#: EstuaryConfig.py:771
+msgid "You need to restart your box to apply changes"
+msgstr ""
+
+#: EstuaryConfig.py:772
+msgid "Estuary Settings: "
+msgstr ""
+
+#: EstuaryConfig.py:772
+msgid "Restart GUI now?"
+msgstr ""
+
+#: EstuaryConfig.py:856
+msgid ""
+"I can not find WeatherPlugin on your system. \n"
+" Download and install Weather plugin and try again."
+msgstr ""
+
+#: EstuaryConfig.py:1009
+msgid ""
+"2017 - Franc \n"
+"Version: "
+msgstr ""
+
+#: EstuaryConfig.py:1019
+msgid ""
+"There is no Estuary skin on your system or Estuary is not default skin. \n"
+" Please make sure you have Estuary installed and set as default skin, then "
+"try again."
+msgstr ""

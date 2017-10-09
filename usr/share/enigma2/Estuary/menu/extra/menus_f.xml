@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin>
+
+
+<screen name="Menu" position="0,0" size="1920,1080" title="PB Menu" flags="wfNoBorder" backgroundColor="FNCScreenBackground">
+  <widget source="global.CurrentTime" render="Label" position="1696,31" size="121,43" font="Bold; 36" valign="center" halign="right" backgroundColor="FNCMainPodlogaColor" transparent="1">
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <ePixmap pixmap="Estuary/menu/clock.png" position="1826,46" size="48,48" zPosition="1" name="icon_clock" alphatest="blend" />
+  <widget source="global.CurrentTime" render="Label" position="1458,74" size="359,35" font="Regular; 26" valign="center" halign="right" backgroundColor="FNCMainPodlogaColor" transparent="1" foregroundColor="FNCMainFontColor">
+    <convert type="ClockToText">Format:%A, %e. %B %Y</convert>
+  </widget>
+  <ePixmap position="1800,997" size="44,44" zPosition="10" pixmap="Estuary/menu/style1/item-count.png" alphatest="blend" />
+  <eLabel name="" position="0, 0" size="1920,120" zPosition="-9" backgroundColor="FNCzBackUpDown" />
+  <eLabel name="" position="0,120" size="1920,2" backgroundColor="FNCzBackLine" />
+  <eLabel name="" position="0,960" size="1920,120" zPosition="-9" backgroundColor="FNCzBackUpDown" />
+  <eLabel name="" position="0,958" size="1920,2" backgroundColor="FNCzBackLine" />
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="1669,37" size="35,35" source="session.MSNWeather" transparent="1" zPosition="5" backgroundColor="transparent">
+    <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Estuary/weather_icons/small/,png</convert>
+  </widget>
+  <widget font="Bold; 36" render="Label" position="1457,31" size="202,43" source="session.MSNWeather" transparent="1" zPosition="3" halign="right" valign="center" backgroundColor="FNCMainPodlogaColor">
+    <convert type="MSNWeather">temperature_current</convert>
+  </widget>
+  <ePixmap position="69,34" size="90,60" zPosition="10" pixmap="Estuary/logo/default.png" alphatest="blend" />
+  <widget name="title" position="190,74" size="716,35" font="Regular; 27" backgroundColor="FNCMainBarColor" transparent="1" halign="left" valign="center" zPosition="10" foregroundColor="FNCmainColor" />
+  <widget name="" position="190,31" size="1265,43" render="Label" source="global.CurrentTime" font="Bold; 36" backgroundColor="FNCMainPodlogaColor" transparent="1" halign="left" valign="bottom" zPosition="10">
+    <convert type="FNCpiLayInfo">IMGname</convert>
+  </widget>
+  
+  
+</screen>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</skin>
+

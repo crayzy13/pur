@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin>
+
+
+<!-- ///*** Menu SCREENS ***\\\ -->
+<screen name="FNCmenu_panel" position="0,0" size="1920,1080" title="Menu Panel" flags="wfNoBorder" backgroundColor="FNCzBackMid"><widget source="global.CurrentTime" render="Label" position="1696,31" size="121,43" font="Bold; 36" valign="center" halign="right" backgroundColor="FNCMainPodlogaColor" transparent="1"><convert type="ClockToText">Format:%H:%M</convert></widget><ePixmap pixmap="Estuary/menu/clock.png" position="1826,46" size="48,48" zPosition="1" name="icon_clock" alphatest="blend" /><widget source="session.CurrentService" render="Label" position="769,241" size="1080,40" font="Regular; 32" backgroundColor="FNCMainPodlogaColor" transparent="1" halign="right" foregroundColor="FNCmainColor" zPosition="5" valign="top" noWrap="1"><convert type="ServiceName">Name</convert></widget><widget source="session.Event_Now" render="Label" position="769,279" size="881,40" halign="right" font="Regular; 28" foregroundColor="FNCMainFontColor" transparent="1" noWrap="1" backgroundColor="FNCMainPodlogaColor" valign="center" zPosition="5" borderWidth="0" borderColor="white"><convert type="FNCevtName">Name</convert></widget><widget source="session.Event_Now" render="Label" position="1635,279" size="112,40" halign="right" font="Regular; 28" foregroundColor="FNCMainFontColor" backgroundColor="FNCMainPodlogaColor" transparent="1" valign="center" zPosition="10"><convert type="EventTime">StartTime</convert><convert type="ClockToText">Format:- %H:%M</convert></widget><widget source="session.Event_Now" render="Label" position="1738,279" size="112,40" halign="right" font="Regular; 28" foregroundColor="FNCMainFontColor" backgroundColor="FNCMainPodlogaColor" transparent="1" valign="center" zPosition="10"><convert type="EventTime">EndTime</convert><convert type="ClockToText">Format:- %H:%M</convert></widget><widget source="global.CurrentTime" render="Label" position="1458,74" size="359,35" font="Regular; 26" valign="center" halign="right" backgroundColor="FNCMainPodlogaColor" transparent="1" foregroundColor="FNCMainFontColor"><convert type="ClockToText">Format:%A, %e. %B %Y</convert></widget><eLabel name="" position="775,736" size="1068,189" backgroundColor="FNCScreenBackground" zPosition="5" /><widget source="session.Event_Now" render="FNCrntxt" options="movetype=running,startpoint=0,direction=top,steptime=65,repeat=185,startdelay=5000,wrap,always=0" position="789,739" size="1047,179" font="Regular; 30" backgroundColor="FNCScreenBackground" transparent="1" halign="block" valign="top" foregroundColor="FNCMainFontColor" zPosition="6"><convert type="FNCevtName">ExtendedDescription</convert></widget><ePixmap position="69,34" size="90,60" zPosition="10" pixmap="Estuary/logo/default.png" alphatest="blend" /><widget source="session.VideoPicture" render="Pig" position="774,324" zPosition="-2" size="1073,602" backgroundColor="transparent" transparent="0" /><widget source="menu" render="Listbox" enableWrapAround="1" position="49,148" size="666,780" zPosition="20" scrollbarMode="showNever" selectionPixmap="Estuary/selections/selection.png" transparent="1" backgroundPixmap="Estuary/list/separator_menu_78.png"><convert type="TemplatedMultiContent">
+{"template": [ MultiContentEntryText(pos = (70,16), size = (550,60), flags = RT_HALIGN_LEFT, text =0) ],
+"fonts": [gFont("Regular",34)],
+"itemHeight":78
+}
+</convert></widget><ePixmap position="748,144" size="1119,70" zPosition="4" pixmap="Estuary/menu/icons/menu_icons.png" /><eLabel name="" position="0, 0" size="1920,120" zPosition="-9" backgroundColor="FNCzBackUpDown" /><eLabel name="" position="0,120" size="1920,2" backgroundColor="FNCzBackLine" /><eLabel name="" position="0,960" size="1920,120" zPosition="-9" backgroundColor="FNCzBackUpDown" /><eLabel name="" position="0,958" size="1920,2" backgroundColor="FNCzBackLine" /><eLabel name="" position="748,233" size="1120,698" backgroundColor="FNCzBackUpDown" zPosition="-5" /><eLabel name="" position="43,144" size="678,787" backgroundColor="FNCzBackUpDown" /><widget alphatest="blend" render="MSNWeatherPixmap" position="1669,37" size="35,35" source="session.MSNWeather" transparent="1" zPosition="5" backgroundColor="transparent"><convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Estuary/weather_icons/small/,png</convert></widget><widget font="Bold; 36" render="Label" position="1457,31" size="202,43" source="session.MSNWeather" transparent="1" zPosition="3" halign="right" valign="center" backgroundColor="FNCMainPodlogaColor"><convert type="MSNWeather">temperature_current</convert></widget><eLabel name="" position="49,148" size="666,3" backgroundColor="FNCzBackUpDown" zPosition="21" /><widget name="" position="190,31" size="1265,43" render="Label" source="global.CurrentTime" font="Bold; 36" backgroundColor="FNCMainPodlogaColor" transparent="1" halign="left" valign="bottom" zPosition="10"><convert type="FNCpiLayInfo">IMGname</convert></widget><widget render="Label" source="Title" position="190,74" size="716,35" font="Regular; 27" backgroundColor="FNCMainBarColor" transparent="1" halign="left" valign="center" zPosition="10" foregroundColor="FNCmainColor" /></screen><screen name="Menu" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="FNCzBackMid">
+  <panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" />
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/start_kodi.png" position="748,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">start_kodi</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- ///*** MAIN MENU ***\\\ -->
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/timer_edit.png" position="850,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">timer_edit</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/info_screen.png" position="953,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">info_screen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/plugin_selection.png" position="1056,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">plugin_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">setup_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/standby_restart_list.png" position="1262,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">standby_restart_list</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/service_searching_selection.png" position="1365,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">service_searching_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/hardisk_selection.png" position="1468,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">hardisk_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/network_menu.png" position="1571,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">network_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">av_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- ///*** SETUP SUBMENU ***\\\ -->
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">system_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">cam_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">parental_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">xmltvimporter</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">usage_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">epg_settings</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">recording_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">local_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">input_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">hdmi_cec_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">fansetup_config</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- ///*** STANDBY/RESTART SUBMENU ***\\\ -->
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/standby_restart_list.png" position="1262,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">sleep</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/standby_restart_list.png" position="1262,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">standby</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/standby_restart_list.png" position="1262,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">restart</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/standby_restart_list.png" position="1262,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">restart_enigma</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/standby_restart_list.png" position="1262,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">deep_standby</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- ///*** INFORMATION SUBMENU ***\\\ -->
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/info_screen.png" position="953,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">service_info_screen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/info_screen.png" position="953,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">about_screen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- ///*** AV/GUI SUBMENU ***\\\ -->
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">user_interface</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">skin_selector</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">av_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- ///*** MNIGMA/UNDEFINED SUBMENU ***\\\ -->
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/fw.png" position="1777,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">undefined</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/fw.png" position="1777,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">factory_reset</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/fw.png" position="1777,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">software_update</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- ///*** OCTAGON ADDITIONAL MENUS ***\\\ -->
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/fw.png" position="1777,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">extra_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">video_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">video_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">audio_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">rec_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">epg_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">extended_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/info_screen.png" position="953,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">device_screen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/timer_edit.png" position="850,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">powertimer_edit</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/timer_edit.png" position="850,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">crontimer_edit</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/timer_edit.png" position="850,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">autotimer_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">tuner_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/service_searching_selection.png" position="1365,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">auto_scan</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/service_searching_selection.png" position="1365,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">manual_scan</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">autobouquetsmakermaker</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/service_searching_selection.png" position="1365,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">blindscan</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/service_searching_selection.png" position="1365,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">cablescan</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">positioner_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/service_searching_selection.png" position="1365,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">satfinder</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/info_screen.png" position="953,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">streaming_clients_info_screen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">ci_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">autores_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">subtitle_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/network_menu.png" position="1571,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">network_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">input_device_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">display_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">keyboard_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">RecordPaths</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">language_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">timezone_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">hotkey_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">VFD_INI</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">auto_3d_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">sd_position_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">video_finetune</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">lcd</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/timer_edit.png" position="850,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">timer_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">autolanguage_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+</screen><screen name="menu_mainmenu" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="FNCzBackMid"><panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" /><ePixmap position="748,144" size="1119,70" zPosition="4" pixmap="Estuary/menu/icons/menu_icons.png" /><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/start_kodi.png" position="748,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">start_kodi</convert><convert type="ConditionalShowHide" /></widget><!-- ///*** MAIN MENU ***\\\ --><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/timer_edit.png" position="850,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">timer_edit</convert><convert type="ConditionalShowHide" /></widget><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/info_screen.png" position="953,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">info_screen</convert><convert type="ConditionalShowHide" /></widget><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/plugin_selection.png" position="1056,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">plugin_selection</convert><convert type="ConditionalShowHide" /></widget><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">setup_selection</convert><convert type="ConditionalShowHide" /></widget><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/standby_restart_list.png" position="1262,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">standby_restart_list</convert><convert type="ConditionalShowHide" /></widget><!-- ///*** MAIN MENU - OCTAGON ***\\\ --><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/fw.png" position="1777,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">extra_setup</convert><convert type="ConditionalShowHide" /></widget><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/timer_edit.png" position="850,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">timer_menu</convert><convert type="ConditionalShowHide" /></widget></screen><screen name="menu_system" position="0,0" size="1920,1080" title="System" flags="wfNoBorder" backgroundColor="FNCzBackMid"><panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" /><ePixmap pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5" /></screen><screen name="menu_setup" position="0,0" size="1920,1080" title="System" flags="wfNoBorder" backgroundColor="FNCzBackMid"><panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" /><ePixmap position="748,144" size="1119,70" zPosition="4" pixmap="Estuary/menu/icons/menu_icons.png" /><!-- ///*** SETUP SUBMENU ***\\\ --><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">system_selection</convert><convert type="ConditionalShowHide" /></widget><!-- ///*** SETUP SUBMENU ***\\\ --><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/service_searching_selection.png" position="1365,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">service_searching_selection</convert><convert type="ConditionalShowHide" /></widget><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">ci_setup</convert><convert type="ConditionalShowHide" /></widget><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">cam_setup</convert><convert type="ConditionalShowHide" /></widget><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">parental_setup</convert><convert type="ConditionalShowHide" /></widget><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/fw.png" position="1777,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">factory_reset</convert><convert type="ConditionalShowHide" /></widget><!-- ///*** MNIGMA/UNDEFINED SUBMENU ***\\\ --><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/fw.png" position="1777,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">undefined</convert><convert type="ConditionalShowHide" /></widget><widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/fw.png" position="1777,144" size="90,70" zPosition="5"><convert type="MenuEntryCompare">software_update</convert><convert type="ConditionalShowHide" /></widget></screen><screen name="menu_shutdown" position="0,0" size="1920,1080" title="Shutdown" flags="wfNoBorder" backgroundColor="FNCzBackMid"><panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" /><ePixmap pixmap="Estuary/menu/icons/standby_restart_list.png" position="1262,144" size="90,70" zPosition="5" /></screen><screen name="menu_information" position="0,0" size="1920,1080" title="Informations" flags="wfNoBorder" backgroundColor="FNCzBackMid"><panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" /><ePixmap pixmap="Estuary/menu/icons/info_screen.png" position="953,144" size="90,70" zPosition="5" /></screen><screen name="menu_scan" position="0,0" size="1920,1080" title="Scan" flags="wfNoBorder" backgroundColor="FNCzBackMid"><panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" /><ePixmap render="Pixmap" pixmap="Estuary/menu/icons/service_searching_selection.png" position="1365,144" size="90,70" zPosition="5" /></screen><screen name="menu_network" position="0,0" size="1920,1080" title="Network" flags="wfNoBorder" backgroundColor="FNCzBackMid"><panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" /><ePixmap render="Pixmap" pixmap="Estuary/menu/icons/network_menu.png" position="1571,144" size="90,70" zPosition="5" /></screen><screen name="menu_harddisk" position="0,0" size="1920,1080" title="Hard disk" flags="wfNoBorder" backgroundColor="FNCzBackMid"><panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" /><ePixmap render="Pixmap" pixmap="Estuary/menu/icons/hardisk_selection.png" position="1468,144" size="90,70" zPosition="5" /></screen><screen name="MenuSort" position="0,0" size="1920,1080" title="Menu Sort" flags="wfNoBorder" backgroundColor="FNCScreenBackground"><widget source="Title" render="Label" position="210,140" size="1500,68" zPosition="-1" halign="center" font="Bold; 36" backgroundColor="FNCmainColor" transparent="1" valign="center" /><ePixmap name="bPPodloga" position="210,140" size="1500,820" pixmap="Estuary/background/back_mon_empty.png" zPosition="-10" /><eLabel name="" position="235,227" size="1283,648" zPosition="-5" /><ePixmap pixmap="Estuary/menu/icons/fw.png" position="1567,284" size="90,70" zPosition="1" /><eLabel name="" position="1542,372" size="145,50" font="Regular; 28" valign="center" halign="center" text="OK" /><eLabel name="" position="1542,435" size="145,50" font="Regular; 28" valign="center" halign="center" text="Exit" /><widget source="menu" render="Listbox" position="250,240" size="1235,624" scrollbarMode="showNever" font="Regular; 28" itemHeight="48" selectionPixmap="Estuary/selections/selection.png" backgroundPixmap="Estuary/list/separator_48.png" transparent="1"><convert type="StringList" /></widget><eLabel name="" position="1502,268" size="4,570" zPosition="100" backgroundColor="white" /><ePixmap pixmap="Estuary/buttons/buttons.png" position="214,893" size="1483,56" alphatest="blend" zPosition="100" /><widget name="key_red" position="235,893" size="354,56" zPosition="1" font="Regular; 28" halign="center" valign="center" backgroundColor="FNCMainListColor" transparent="0" foregroundColor="FNCMainFontColor" /><widget name="key_green" position="602,893" size="354,56" zPosition="1" font="Regular; 28" halign="center" valign="center" backgroundColor="FNCMainListColor" transparent="0" foregroundColor="FNCMainFontColor" /><widget name="key_yellow" position="969,893" size="354,56" zPosition="1" font="Regular; 28" halign="center" valign="center" backgroundColor="FNCMainListColor" transparent="0" foregroundColor="FNCMainFontColor" /><widget name="key_blue" position="1336,893" size="354,56" zPosition="1" font="Regular; 28" halign="center" valign="center" backgroundColor="FNCMainListColor" transparent="0" foregroundColor="FNCMainFontColor" /></screen><screen name="menu_epg" position="0,0" size="1920,1080" title="EPG Settings" flags="wfNoBorder" backgroundColor="FNCzBackMid"><panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" /><ePixmap pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5" /></screen><screen name="menu_osd_menu" position="0,0" size="1920,1080" title="OSD Settings" flags="wfNoBorder" backgroundColor="FNCzBackMid"><panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" /><ePixmap render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5" /></screen><screen name="menu_display" position="0,0" size="1920,1080" title="Display Settings" flags="wfNoBorder" backgroundColor="FNCzBackMid"><panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" /><ePixmap render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5" /></screen><screen name="menu_logs_menu" position="0,0" size="1920,1080" title="Log Settings" flags="wfNoBorder" backgroundColor="FNCzBackMid"><panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" /><ePixmap pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5" /></screen><screen name="menu_timermenu" position="0,0" size="1920,1080" title="Timer Menu" flags="wfNoBorder" backgroundColor="FNCzBackMid"><panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" /><ePixmap pixmap="Estuary/menu/icons/timer_edit.png" position="850,144" size="90,70" zPosition="5" /></screen><screen name="menu_cam" position="0,0" size="1920,1080" title="Camd Menu" flags="wfNoBorder" backgroundColor="FNCzBackMid"><panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" /><ePixmap pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5" /></screen><screen name="MenuY" position="0,0" size="1920,1080" backgroundColor="FNCzBackMid">
+  <panel name="FNCmenu_panel" setFNCMenuPanelReady="Ready" />
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/start_kodi.png" position="748,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">start_kodi</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- ///*** MAIN MENU ***\\\ -->
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/timer_edit.png" position="850,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">timer_edit</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/info_screen.png" position="953,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">info_screen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/plugin_selection.png" position="1056,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">plugin_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">setup_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/standby_restart_list.png" position="1262,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">standby_restart_list</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/service_searching_selection.png" position="1365,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">service_searching_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/hardisk_selection.png" position="1468,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">hardisk_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/network_menu.png" position="1571,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">network_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">av_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- ///*** SETUP SUBMENU ***\\\ -->
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">system_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">cam_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">parental_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">xmltvimporter</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">usage_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">epg_settings</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">recording_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">local_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">input_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">hdmi_cec_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">fansetup_config</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- ///*** STANDBY/RESTART SUBMENU ***\\\ -->
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/standby_restart_list.png" position="1262,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">sleep</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/standby_restart_list.png" position="1262,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">standby</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/standby_restart_list.png" position="1262,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">restart</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/standby_restart_list.png" position="1262,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">restart_enigma</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/standby_restart_list.png" position="1262,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">deep_standby</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- ///*** INFORMATION SUBMENU ***\\\ -->
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/info_screen.png" position="953,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">service_info_screen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/info_screen.png" position="953,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">about_screen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- ///*** AV/GUI SUBMENU ***\\\ -->
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">user_interface</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">skin_selector</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">av_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- ///*** MNIGMA/UNDEFINED SUBMENU ***\\\ -->
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/fw.png" position="1777,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">undefined</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/fw.png" position="1777,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">factory_reset</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/fw.png" position="1777,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">software_update</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- ///*** OCTAGON ADDITIONAL MENUS ***\\\ -->
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/fw.png" position="1777,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">extra_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">video_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">video_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">audio_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">rec_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">epg_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">extended_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/info_screen.png" position="953,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">device_screen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/timer_edit.png" position="850,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">powertimer_edit</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/timer_edit.png" position="850,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">crontimer_edit</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/timer_edit.png" position="850,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">autotimer_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">tuner_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/service_searching_selection.png" position="1365,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">auto_scan</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/service_searching_selection.png" position="1365,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">manual_scan</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">autobouquetsmakermaker</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/service_searching_selection.png" position="1365,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">blindscan</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/service_searching_selection.png" position="1365,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">cablescan</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">positioner_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/service_searching_selection.png" position="1365,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">satfinder</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/info_screen.png" position="953,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">streaming_clients_info_screen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">ci_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">autores_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">subtitle_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/network_menu.png" position="1571,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">network_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">input_device_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">display_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">keyboard_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">RecordPaths</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">language_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">timezone_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">hotkey_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">VFD_INI</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">auto_3d_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">sd_position_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">video_finetune</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/av_menu.png" position="1674,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">lcd</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/timer_edit.png" position="850,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">timer_menu</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Estuary/menu/icons/setup_selection.png" position="1159,144" size="90,70" zPosition="5">
+    <convert type="MenuEntryCompare">autolanguage_setup</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+</screen>
+
+
+
+
+
+</skin>
+

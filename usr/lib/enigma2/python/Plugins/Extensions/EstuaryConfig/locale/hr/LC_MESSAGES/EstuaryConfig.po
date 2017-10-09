@@ -1,0 +1,476 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: EstuaryConfig\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-31 19:13+0200\n"
+"PO-Revision-Date: 2017-05-31 20:04+0200\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.11\n"
+
+#: EstuaryConfig.py:45 EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48 EstuaryConfig.py:51 EstuaryConfig.py:52
+msgid "default"
+msgstr "zadano"
+
+#: EstuaryConfig.py:45
+msgid "-5%"
+msgstr ""
+
+#: EstuaryConfig.py:45
+msgid "-10%"
+msgstr ""
+
+#: EstuaryConfig.py:45
+msgid "+5%"
+msgstr ""
+
+#: EstuaryConfig.py:45
+msgid "+10%"
+msgstr ""
+
+#: EstuaryConfig.py:45
+msgid "+15%"
+msgstr ""
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48 EstuaryConfig.py:51 EstuaryConfig.py:60
+msgid "blue"
+msgstr "plava"
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48 EstuaryConfig.py:51 EstuaryConfig.py:60
+msgid "green"
+msgstr "zelena"
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48 EstuaryConfig.py:51 EstuaryConfig.py:60
+msgid "orange"
+msgstr "narandžasta"
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48 EstuaryConfig.py:51 EstuaryConfig.py:60
+msgid "red"
+msgstr "crvena"
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48 EstuaryConfig.py:51
+msgid "white"
+msgstr "bijela"
+
+#: EstuaryConfig.py:46 EstuaryConfig.py:47 EstuaryConfig.py:48 EstuaryConfig.py:51 EstuaryConfig.py:60
+msgid "yellow"
+msgstr "žuta"
+
+#: EstuaryConfig.py:51
+msgid "black"
+msgstr "crna"
+
+#: EstuaryConfig.py:51
+msgid "transparent"
+msgstr "prozirno"
+
+#: EstuaryConfig.py:52
+msgid "10"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "20"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "30"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "40"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "50"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "60"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "70"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "80"
+msgstr ""
+
+#: EstuaryConfig.py:52
+msgid "90"
+msgstr ""
+
+#: EstuaryConfig.py:56
+msgid "top"
+msgstr "gore"
+
+#: EstuaryConfig.py:56
+msgid "bottom"
+msgstr "ispod"
+
+#: EstuaryConfig.py:59
+msgid "number"
+msgstr "brojevni"
+
+#: EstuaryConfig.py:59
+msgid "horizontal"
+msgstr "horizontalni"
+
+#: EstuaryConfig.py:59
+msgid "vertical"
+msgstr "vertikalni"
+
+#: EstuaryConfig.py:61 EstuaryConfig.py:66 EstuaryConfig.py:75
+msgid "None"
+msgstr "Ništa"
+
+#: EstuaryConfig.py:61 EstuaryConfig.py:62
+msgid "Weather"
+msgstr "Vremenska prognoza"
+
+#: EstuaryConfig.py:61
+msgid "ECM Info + PIDs"
+msgstr ""
+
+#: EstuaryConfig.py:62
+msgid "System info"
+msgstr "System info"
+
+#: EstuaryConfig.py:66
+msgid "EPG Description"
+msgstr "EPG Opis"
+
+#: EstuaryConfig.py:66
+msgid "Next Events"
+msgstr "Naredni događaji"
+
+#: EstuaryConfig.py:74
+msgid "IconWall"
+msgstr ""
+
+#: EstuaryConfig.py:74
+msgid "Shift"
+msgstr ""
+
+#: EstuaryConfig.py:74
+msgid "ShiftHorizon"
+msgstr ""
+
+#: EstuaryConfig.py:74
+msgid "Verby"
+msgstr ""
+
+#: EstuaryConfig.py:74
+msgid "Standard"
+msgstr ""
+
+#: EstuaryConfig.py:75
+msgid "Type1"
+msgstr ""
+
+#: EstuaryConfig.py:75
+msgid "Type2"
+msgstr ""
+
+#: EstuaryConfig.py:75
+msgid "Type3"
+msgstr ""
+
+#: EstuaryConfig.py:75
+msgid "Type4"
+msgstr ""
+
+#: EstuaryConfig.py:83
+msgid " "
+msgstr ""
+
+#: EstuaryConfig.py:130
+msgid "Global:"
+msgstr "Globalno:"
+
+#: EstuaryConfig.py:131
+msgid "  - Font color"
+msgstr " - Boja slova"
+
+#: EstuaryConfig.py:131
+msgid "Change font color."
+msgstr "Promijeni boju slova"
+
+#: EstuaryConfig.py:132
+msgid "  - Font color Special"
+msgstr " - Boja istaknutih slova"
+
+#: EstuaryConfig.py:132
+msgid "You can change special font color (highlighted stuff in skin). Like event time in infobar, progress bar color, etc..."
+msgstr "Možeš promijeniti boju istaknutog fonta (istaknute stvari u skinu). Npr.  vrijeme događaja na infobar traci, boja progressa, itd ."
+
+#: EstuaryConfig.py:133
+msgid "  - Make font bigger/smaller for"
+msgstr " - Podesi font da bude veći ili manji za..."
+
+#: EstuaryConfig.py:133
+msgid ""
+"This allows you to change the font size relative to skin size. Keep in mind overlap is possible, try to use smaller value If you notice the "
+"overlap."
+msgstr ""
+"Omogućuje relativnu promjenu veličine fonta u odnosu na zadanu. Imaj na umu da su moguća preklapanja widgeta. Ukoliko dođe do toga pokušaj "
+"koristiti manju vrijednost "
+
+#: EstuaryConfig.py:134
+msgid "  - Selection color"
+msgstr " - Boja odabranih dijelova"
+
+#: EstuaryConfig.py:134
+msgid "Change selection color. This will change background color in all lists, for selected item."
+msgstr "Promjena boje označenih (odabranih) dijelova u svim listama."
+
+#: EstuaryConfig.py:137 EstuaryConfig.py:143 EstuaryConfig.py:167 EstuaryConfig.py:176 EstuaryConfig.py:192
+msgid "--------------------------------------------------------------------------------------------------------------------------------------------"
+msgstr ""
+
+#: EstuaryConfig.py:138
+msgid "Background:"
+msgstr "Podloga:"
+
+#: EstuaryConfig.py:139
+msgid "  - Overlay color"
+msgstr " - Boja podloge nad TV slikom"
+
+#: EstuaryConfig.py:139
+msgid "Change overlay color."
+msgstr "Promjeni boju podloge nad TV slikom."
+
+#: EstuaryConfig.py:140
+msgid "  - Overlay color transparency"
+msgstr " - Transparentnost podloge nad TV slikom"
+
+#: EstuaryConfig.py:140
+msgid ""
+"Change overlay color transparency. Default transparency value is 30.\n"
+" So 10 increases by 10%, 20 increases by 20%, etc..."
+msgstr ""
+"Promjeni prozirnost pozadine nad TV slikom. Zadana vrijednost transparentnosti je 30% \n"
+"10% povećava prozirnost za 10%, 20% povećava za 20%, itd..."
+
+#: EstuaryConfig.py:144
+msgid "Infobar/SecondInfobar:"
+msgstr "Infobar / Prošireni Infobar:"
+
+#: EstuaryConfig.py:148
+msgid "Simple and clean user interface without extra informations or widgets."
+msgstr "Jednostavno korisničko sučelje bez dodatnih informacija i widgeta."
+
+#: EstuaryConfig.py:149
+msgid "With alternative infobar you will not be able to see additional widgets/changes/etc... if you have already set them up for default infobar."
+msgstr "Na alternativnoj infobar traci se neće prikazati promjene i widgeti koji su definirani za standardni infobar."
+
+#: EstuaryConfig.py:150
+msgid "  - Use Alternative Infobar"
+msgstr " - Koristi Alternativni Infobar"
+
+#: EstuaryConfig.py:152
+msgid "  - Picon position"
+msgstr " - Pozicija picona"
+
+#: EstuaryConfig.py:152
+msgid ""
+"Change picon position. Choose from top to bottom.\n"
+" So you will see picon on infobar/second infobar according your choice."
+msgstr "Odaberi poziciju picona. Prikaz picona može biti na gornjem ili donjem dijelu infobar trake."
+
+#: EstuaryConfig.py:153
+msgid "  - Show AGC instead BER"
+msgstr " - Prikaži AGC vrijednost umjesto BER vrijednosti"
+
+#: EstuaryConfig.py:153
+msgid "Show AGC instead BER on Infobar. This change will be visible only on Infobar, Second Infobar will not be affected."
+msgstr ""
+"Prikaži AGC vrijednost umjesto zadane BER vrijednosti. Ova promjena će biti vidljiva samo na infobar traci, ali ne i na proširenoj infobar traci."
+
+#: EstuaryConfig.py:154
+msgid "  - Volume Style"
+msgstr " - Stil prikaza volumen bara"
+
+#: EstuaryConfig.py:154
+msgid "Volume style: with number, hotizontal or vertical style?"
+msgstr "Odaberi između: brojčanog prikaza (koji je ujedno i zadani stil), horizontalni ili vertikalni stil."
+
+#: EstuaryConfig.py:156
+msgid "  - Infobar widget"
+msgstr " - Infobar dodatak"
+
+#: EstuaryConfig.py:156
+msgid "Which widget you want to show on Infobar? Default is None. Keep in mind some widgets on infobar screen can make slower ZAP."
+msgstr ""
+"Koji dodatak želiš pokazati na Infobaru? Zadani widget za Infobar je ništa (prazno). Imaj na umu da widgeti mogu usporiti ZAP. U tom slučaju "
+"vrati na zadanu vrijednost."
+
+#: EstuaryConfig.py:157
+msgid "  - Second Infobar widget"
+msgstr " - Prošireni Infobar dodatak"
+
+#: EstuaryConfig.py:157
+msgid "Which widget you want to show on second Infobar?"
+msgstr "Koji dodatak želiš da bude prikazan na proširenom Infobaru? "
+
+#: EstuaryConfig.py:159
+msgid "  - Weather icons color"
+msgstr " - Boja ikona vremenske prognoze"
+
+#: EstuaryConfig.py:159
+msgid "Weather icons color. Weather icons color on infobar/secondinfobar."
+msgstr "Promjeni boju ikona vremenske prognoze. Odnosi se na prošireni Infobar i na samu aplikaciju vremenske prognoze"
+
+#: EstuaryConfig.py:160
+msgid "  - Show channel number"
+msgstr " - Prikaži brojeve kanala"
+
+#: EstuaryConfig.py:160
+msgid "Show channel number under channel name in Infobar/secondinfobar."
+msgstr "Prikaži broj kanala ispod imena kanala na Infobarovima"
+
+#: EstuaryConfig.py:162
+msgid "  - Infobar timeout in seconds"
+msgstr " - Trajanje Infobara"
+
+#: EstuaryConfig.py:162
+msgid "Set the time delay before hiding the infobar."
+msgstr "Postavi vrijeme trajanja prikaza Infobara"
+
+#: EstuaryConfig.py:163
+msgid "  - Show second infobar"
+msgstr " - Prikaži prošireni Infobar"
+
+#: EstuaryConfig.py:163
+msgid ""
+"Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information "
+"about the current channel."
+msgstr ""
+"Konfiguriraj da li (i koliko dugo) će se prošireni Invobar pokazati. Prošireni Infobar sadrži dodatne informacije o trenutnom kanalu + extra "
+"informacije o kodiranju, poziciji satelita, itd."
+
+#: EstuaryConfig.py:164
+msgid "  - Show infobar on event change"
+msgstr " - Prikaži Infobar pri promjeni događaja"
+
+#: EstuaryConfig.py:164
+msgid "When enabled, the infobar will be displayed when a new event starts."
+msgstr "Ako uključiš, Infobar će se automatski prikazati na ekranu kada započne novi događaj"
+
+#: EstuaryConfig.py:168
+msgid "Channel List:"
+msgstr "Kanalna lista:"
+
+#: EstuaryConfig.py:169
+msgid "  - Use Alternative Channel List"
+msgstr " - Koristi Alternativnu Kanalnu Listu"
+
+#: EstuaryConfig.py:169
+msgid "Simple and clean user interface without extra informations."
+msgstr "Jednostavno korisničko sučelje bez dodatnih informacija i widgeta."
+
+#: EstuaryConfig.py:170
+msgid "  - Channel list widget"
+msgstr " - Dodatci (widgeti) kanalne liste"
+
+#: EstuaryConfig.py:170
+msgid "Which widget you want to show on Channel list? EPG Description for selected channel is default, Next Events list or Nothing?"
+msgstr ""
+"Koji dodatak želiš prikazati na kanalnj listi? EPG opis trenutnog događaja (koji je ujedno i zadani stil), Naredni događaji ili Ništa (prazno)?"
+
+#: EstuaryConfig.py:172
+msgid "  - Show Picon in Channel list"
+msgstr " - Prikaži Picon na kanalnoj listi"
+
+#: EstuaryConfig.py:172
+msgid "Show Picon for selected channel. If you notice lag in channel list try to turn off this setting."
+msgstr ""
+"Prikaži picon odabranog kanala i na kanalnoj listi. Imaj na umu da ova opcija, ako je uključena, može usporavati rad kanalne liste na 'kantama' "
+"starijih generacija."
+
+#: EstuaryConfig.py:177
+msgid "Menu:"
+msgstr "Izbornik:"
+
+#: EstuaryConfig.py:178
+msgid "  - Menu Style"
+msgstr " - Stilovi Izbornika "
+
+#: EstuaryConfig.py:178
+msgid "Here you can change menu style."
+msgstr "Estuary podržava više stilova menija. Zadani stil ovisi o imageu.  Odaberi jedan od ponuđenih."
+
+#: EstuaryConfig.py:179
+msgid "  - Choose Background Wallpaper"
+msgstr " - Odaberi wallpaper (sliku pozadine)"
+
+#: EstuaryConfig.py:179
+msgid "Here you can set Menu background picture."
+msgstr "Odaberi sliku koja će se pokazati kao pozadinska slika na svim izbornicima, osim ako je trenutno u uporabi Standardni Menu stil."
+
+#: EstuaryConfig.py:193
+msgid "Weather:"
+msgstr "Vremenska prognoza"
+
+#: EstuaryConfig.py:194
+msgid "Press OK to open Weather plugin and set/change your city and all other values."
+msgstr "Stisni OK kako bi otvorio dodatak vremenske prognoze u kojem možeš podesiti dodatne vrijednosti."
+
+#: EstuaryConfig.py:222
+msgid "Save"
+msgstr "Sačuvaj"
+
+#: EstuaryConfig.py:223
+msgid "Cancel"
+msgstr "Odustani"
+
+#: EstuaryConfig.py:224
+msgid "About"
+msgstr "O programu"
+
+#: EstuaryConfig.py:821
+msgid "Error"
+msgstr "Greška"
+
+#: EstuaryConfig.py:823
+msgid "You need to restart your box to apply changes"
+msgstr "Da bi promjene bile vidljive resetiraj enigmu"
+
+#: EstuaryConfig.py:824
+msgid "Estuary Settings: "
+msgstr "Estuary konfiguracija:"
+
+#: EstuaryConfig.py:824
+msgid "Restart GUI now?"
+msgstr "Resetiraj GUI odmah?"
+
+#: EstuaryConfig.py:907
+msgid ""
+"I can not find WeatherPlugin on your system. \n"
+" Download and install Weather plugin and try again."
+msgstr ""
+"Ne mogu pronaći dodatak vremenske prognoze \n"
+"Skini, instaliraj dodatak pa pokušaj ponovo"
+
+#: EstuaryConfig.py:1062
+msgid ""
+"2017 - Franc \n"
+"Version: "
+msgstr "2016 - Franc Verzija:"
+
+#: EstuaryConfig.py:1072
+msgid ""
+"There is no Estuary skin on your system or Estuary is not default skin. \n"
+" Please make sure you have Estuary installed and set as default skin, then try again."
+msgstr ""
+"Na tvom sustavu ne postoji Estuary skin. \n"
+"Skini, instaliraj Estuary skin pa pokušaj ponovo."
